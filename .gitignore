@@ -1,1 +1,14 @@
-.node_modules
+# Node.js dependencies
+node_modules/
+
+# Tailwind build artifacts
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db

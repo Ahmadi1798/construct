@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+:root {
+    --brand: #F97316;
+    /* primary orange */
+    --brand-600: #EA580C;
+    /* hover orange  */
+    --brand-700: #C2410C;
+    --brand-60: rgba(249, 115, 22, .60);
+    /* for borders/rings w/ opacity */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@layer base {
+
+    html,
+    body {
+        @apply font-sans;
+    }
+
+    body {
+        font-feature-settings: "ss01" 1;
+        text-rendering: optimizeLegibility;
+    }
+}
+
+@layer utilities {
+
+    /* Soft shadow to match your hero/card look */
+    .shadow-soft {
+        box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
+    }
+
+    /* Brand color helpers (so you don't need config colors) */
+    .text-brand {
+        color: var(--brand);
+    }
+
+    .bg-brand {
+        background-color: var(--brand);
+    }
+
+    .bg-brand-600 {
+        background-color: var(--brand-600);
+    }
+
+    .border-brand-60 {
+        border-color: var(--brand-60);
+    }
+
+    .ring-brand {
+        --tw-ring-color: var(--brand);
+    }
+
+    /* Focus ring matching brand */
+    .focus-brand:focus-visible {
+        outline: 2px solid var(--brand);
+        outline-offset: 2px;
+    }
+
+    /* Container shortcut (since you're not using theme.container) */
+    .container {
+        @apply mx-auto px-4 sm:px-6 lg:px-8;
+    }
+}

@@ -1,0 +1,1383 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Construct — From Aspirations to Achievements</title>
+
+    <link rel="stylesheet" href="./dist/tailwind.css" />
+    <script src="./js/script.js" defer></script>
+  </head>
+
+  <body class="h-full bg-[#0a0b10] text-white">
+    <!-- Background gradient wrapper -->
+    <div class="relative min-h-screen overflow-hidden">
+      <!-- Top-to-bottom & radial gradient like the screenshot -->
+      <div
+        class="absolute inset-0 -z-10 bg-[radial-gradient(1000px_520px_at_15%_6%,rgba(255,140,64,.38),transparent_60%),radial-gradient(700px_360px_at_60%_0%,rgba(255,140,64,.14),transparent_65%)] bg-gradient-to-b from-[#1b0f0c] via-[#0e0f1a] to-[#07080d]"
+      ></div>
+
+      <!-- ===== NAVBAR ===== -->
+      <header class="relative">
+        <nav class="container py-5 flex items-center justify-between">
+          <!-- Logo -->
+          <a href="#" class="flex items-center gap-2">
+            <span class="text-xl font-semibold tracking-tight text-orange-400"
+              >Construct</span
+            >
+          </a>
+
+          <!-- Desktop links -->
+          <ul
+            class="hidden md:flex items-center gap-8 text-sm/none text-white/80 font-semibold"
+          >
+            <li>
+              <a
+                class="hover:border-b py-1 hover:border-orange-400 focus-visible:outline-2 focus-visible:outline-brand"
+                href="#hero"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:border-b py-1 hover:border-orange-400 focus-visible:outline-2 focus-visible:outline-brand"
+                href="#about-us"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:border-b py-1 hover:border-orange-400 focus-visible:outline-2 focus-visible:outline-brand"
+                href="#services"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:border-b py-1 hover:border-orange-400 focus-visible:outline-2 focus-visible:outline-brand"
+                href="#projects"
+                >Projects</a
+              >
+            </li>
+          </ul>
+
+          <div class="hidden md:block">
+            <a
+              href="#contact"
+              class="inline-flex items-center rounded-xl bg-brand px-4 py-2.5 text-sm font-medium shadow-soft hover:bg-brand-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+            >
+              Contact us
+            </a>
+          </div>
+
+          <!-- Mobile menu button -->
+          <button
+            id="menuBtn"
+            class="md:hidden inline-flex items-center justify-center rounded-lg p-2 hover:bg-white/5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </nav>
+
+        <!-- Mobile menu panel -->
+        <div id="mobileMenu" class="md:hidden hidden border-t border-white/10">
+          <div class="container py-3 flex flex-col gap-2 text-white/80">
+            <a
+              class="py-2 hover:text-white hover:border-b hover:border-orange-400 w-fit"
+              href="#hero"
+              >Home</a
+            >
+            <a
+              class="py-2 hover:text-white hover:border-b hover:border-orange-400 w-fit"
+              href="#about-us"
+              >About us</a
+            >
+            <a
+              class="py-2 hover:text-white hover:border-b hover:border-orange-400 w-fit"
+              href="#services"
+              >Services</a
+            >
+            <a
+              class="py-2 hover:text-white hover:border-b hover:border-orange-400 w-fit"
+              href="#projects"
+              >Projects</a
+            >
+            <a
+              class="mt-2 inline-flex items-center w-fit rounded-xl bg-brand px-4 py-2.5 text-sm font-medium shadow-soft hover:bg-brand-600"
+              href="#contact"
+              >Contact us</a
+            >
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <!-- ===== HERO ===== -->
+        <section
+          class="container min-h-screen pt-6 md:pt-14 lg:pt-20 pb-14 lg:pb-28"
+          id="hero"
+        >
+          <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+            <!-- LEFT: Text + CTAs + circular photos -->
+            <div class="relative">
+              <h1
+                class="text-4xl/tight sm:text-5xl/tight lg:text-6xl/tight xl:text-7xl/tight font-extrabold tracking-tight"
+              >
+                From Aspirations to Achievements<br class="hidden sm:block" />
+                Nurturing Ideal Realities
+              </h1>
+
+              <p class="mt-5 max-w-2xl text-base/7 text-white/70">
+                Embarking on a journey with a shared vision, we are dedicated to
+                transforming aspirations into remarkable achievements. We work
+                side by side with our clients.
+              </p>
+
+              <!-- CTAs -->
+              <div class="mt-7 flex flex-wrap gap-4">
+                <a
+                  href="#get-started"
+                  class="inline-flex items-center rounded-xl bg-brand px-5 py-3 font-medium shadow-soft hover:bg-brand-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+                >
+                  Get started
+                </a>
+                <a
+                  href="#consultation"
+                  class="inline-flex items-center rounded-xl px-5 py-3 font-medium ring-1 ring-white/20 hover:bg-white/5"
+                >
+                  Free consultation
+                </a>
+              </div>
+
+              <!-- Overlapping circular images + callout ring -->
+              <div class="mt-10 flex items-center gap-8">
+                <!-- two overlapping circles -->
+                <div class="relative w-[220px] h-[140px]">
+                  <img
+                    src="./assets/home/circle-1.jpg"
+                    alt="On-site crew working"
+                    class="absolute left-0 top-0 w-40 h-40 object-cover ring-orange-500 rounded-full ring-2"
+                  />
+                  <img
+                    src="./assets/home/circle-2.jpg"
+                    alt="Rebar & concrete work"
+                    class="absolute left-24 top-6 w-40 h-40 object-cover ring-orange-500 rounded-full ring-2"
+                  />
+                </div>
+
+                <!-- circular caption with orange ring -->
+                <div class="relative">
+                  <div
+                    class="w-44 h-44 rounded-full bg-brand flex items-center justify-center"
+                  >
+                    <p
+                      class="text-xs text-white/80 font-semibold px-6 text-center"
+                    >
+                      New Constructors<br />Shaping Tomorrow’s<br />World
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- RIGHT: Hero imagery -->
+            <div class="relative max-w-full">
+              <!-- Decorative back-facing glow (kept) -->
+              <div
+                class="absolute -z-10 right-10 top-10 h-72 w-72 rounded-full bg-[radial-gradient(closest-side,rgba(249,115,22,.22),transparent_70%)]"
+              ></div>
+
+              <!-- Premium card wrapper -->
+              <div
+                class="relative mx-auto lg:mx-0 md:w-[650px] sm:w-[360px] max-w-full"
+              >
+                <!-- Soft outer glow -->
+                <div
+                  class="absolute -inset-4 -z-10 rounded-[2rem] bg-gradient-to-tr from-brand/40 via-white/10 to-transparent blur-xl opacity-90"
+                ></div>
+
+                <!-- Gradient border frame -->
+                <div
+                  class="relative p-[3px] transition-transform duration-300 hover:-translate-y-1 rounded-[1.75rem] bg-gradient-to-tr from-brand via-orange-300/30 to-transparent shadow-2xl"
+                >
+                  <!-- Glassy card + image -->
+                  <div
+                    class="rounded-[1.6rem] overflow-hidden bg-white/5 backdrop-blur-[2px] ring-1 ring-white/10"
+                  >
+                    <img
+                      src="./assets/home/hero-worker.PNG"
+                      alt="Construction engineer in safety vest"
+                      class="w-full h-auto object-cover"
+                    />
+                    <!-- Gentle highlight sweep -->
+                    <div
+                      class="pointer-events-none absolute inset-0 bg-[radial-gradient(60%_40%_at_70%_10%,rgba(255,255,255,.16),transparent_60%)]"
+                    ></div>
+                  </div>
+                </div>
+
+                <!-- Brand glow puck -->
+                <div
+                  class="absolute -right-8 -bottom-8 h-36 w-36 rounded-full bg-brand/30 blur-2xl"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ===== About US ===== -->
+        <section id="about-us" class="bg-white text-[#0b0c10]">
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
+            <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+              <!-- LEFT: Copy -->
+              <div>
+                <span
+                  class="inline-flex items-center rounded-full bg-[#F97316]/10 text-[#F97316] px-3 py-1 text-xs font-semibold ring-1 ring-[#F97316]/20"
+                >
+                  About Us
+                </span>
+
+                <h2
+                  class="mt-4 text-3xl sm:text-4xl font-extrabold tracking-tight"
+                >
+                  Building with Integrity, Delivering with Precision
+                </h2>
+
+                <p class="mt-4 text-black/70">
+                  We are a full-service construction partner focused on safe
+                  delivery, quality craftsmanship, and predictable schedules.
+                  From design-assist to turnkey execution, our teams bring
+                  decades of field expertise to residential, commercial, and
+                  industrial projects.
+                </p>
+
+                <!-- Highlights -->
+                <ul class="mt-6 space-y-3">
+                  <li class="flex gap-3">
+                    <span
+                      class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#F97316]/10 text-[#F97316] ring-1 ring-[#F97316]/20"
+                    >
+                      <!-- check -->
+                      <svg
+                        class="h-3.5 w-3.5"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M5 12.5l4 4 10-10"
+                        />
+                      </svg>
+                    </span>
+                    <p class="text-sm sm:text-base">
+                      <span class="font-semibold">Licensed & Insured</span>
+                      across multiple jurisdictions.
+                    </p>
+                  </li>
+                  <li class="flex gap-3">
+                    <span
+                      class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#F97316]/10 text-[#F97316] ring-1 ring-[#F97316]/20"
+                    >
+                      <svg
+                        class="h-3.5 w-3.5"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M3 12h18M12 3v18"
+                        />
+                      </svg>
+                    </span>
+                    <p class="text-sm sm:text-base">
+                      <span class="font-semibold">Safety-first culture</span>
+                      with OSHA-driven practices.
+                    </p>
+                  </li>
+                  <li class="flex gap-3">
+                    <span
+                      class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#F97316]/10 text-[#F97316] ring-1 ring-[#F97316]/20"
+                    >
+                      <svg
+                        class="h-3.5 w-3.5"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M9 12l2 2 4-4M7 20h10a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2z"
+                        />
+                      </svg>
+                    </span>
+                    <p class="text-sm sm:text-base">
+                      <span class="font-semibold"
+                        >Schedule-driven delivery</span
+                      >
+                      with transparent reporting.
+                    </p>
+                  </li>
+                </ul>
+
+                <!-- Stats -->
+                <div class="mt-8 grid grid-cols-3 gap-4 sm:gap-6">
+                  <div class="rounded-xl ring-1 ring-black/10 p-4">
+                    <div class="text-2xl font-extrabold">12+</div>
+                    <div class="mt-1 text-xs text-black/60">
+                      Years Experience
+                    </div>
+                  </div>
+                  <div class="rounded-xl ring-1 ring-black/10 p-4">
+                    <div class="text-2xl font-extrabold">180+</div>
+                    <div class="mt-1 text-xs text-black/60">
+                      Projects Delivered
+                    </div>
+                  </div>
+                  <div class="rounded-xl ring-1 ring-black/10 p-4">
+                    <div class="text-2xl font-extrabold">98%</div>
+                    <div class="mt-1 text-xs text-black/60">
+                      Client Satisfaction
+                    </div>
+                  </div>
+                </div>
+
+                <!-- CTAs -->
+                <div class="mt-8 flex flex-wrap gap-4">
+                  <a
+                    href="#contact"
+                    class="inline-flex items-center rounded-lg bg-[#F97316] px-5 py-3 text-white font-medium shadow hover:bg-[#EA580C] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F97316]"
+                  >
+                    Get a Quote
+                  </a>
+                  <a
+                    href="#projects"
+                    class="inline-flex items-center rounded-lg px-5 py-3 ring-1 ring-black/15 hover:bg-black/5 font-medium"
+                  >
+                    View Projects
+                  </a>
+                </div>
+              </div>
+
+              <!-- RIGHT: Image collage with badge -->
+              <div class="relative">
+                <!-- soft glow -->
+                <div
+                  class="absolute -z-10 -inset-4 rounded-3xl bg-gradient-to-tr from-[#F97316]/30 via-black/5 to-transparent blur-2xl"
+                ></div>
+
+                <div class="grid grid-cols-2 gap-4">
+                  <img
+                    src="./assets/about/about-crew-1.jpg"
+                    alt="Site crew at work"
+                    class="rounded-2xl ring-1 ring-black/10 object-cover h-56 sm:h-64 w-full"
+                  />
+                  <img
+                    src="./assets/about/about-crew-2.jpg"
+                    alt="Engineer reviewing plans"
+                    class="rounded-2xl ring-1 ring-black/10 object-cover h-56 sm:h-64 w-full"
+                  />
+                  <img
+                    src="./assets/about/about-crew-3.jpg"
+                    alt="Concrete and rebar works"
+                    class="rounded-2xl ring-1 ring-black/10 object-cover h-56 sm:h-64 w-full"
+                  />
+                  <img
+                    src="./assets/about/about-crew-4.jpg"
+                    alt="Crane and structural frame"
+                    class="rounded-2xl ring-1 ring-black/10 object-cover h-56 sm:h-64 w-full"
+                  />
+                </div>
+
+                <!-- corner badge -->
+                <div class="absolute -right-3 -top-3">
+                  <div
+                    class="rounded-xl bg-white ring-1 ring-black/10 px-4 py-2 shadow-sm"
+                  >
+                    <div class="text-xs text-black/60">Trusted Since</div>
+                    <div class="text-lg font-bold">2013</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ========== Services ========== -->
+        <section id="services" class="bg-white text-[#0b0c10]">
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+            <!-- Heading row -->
+            <span
+              class="inline-flex items-center rounded-full bg-[#F97316]/10 text-[#F97316] px-3 py-1 mb-3 text-xs font-semibold ring-1 ring-[#F97316]/20"
+            >
+              Services
+            </span>
+            <div class="flex items-start justify-between gap-6">
+              <div class="max-w-2xl">
+                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">
+                  In-Demand Services
+                </h2>
+                <p class="mt-3 text-sm sm:text-base text-black/60">
+                  In-Demand services are a testament to our capacity to adapt,
+                  to grow, and to provide solutions that improve the quality of
+                  our lives.
+                </p>
+              </div>
+
+              <a
+                href="#services"
+                class="hidden sm:inline-flex items-center rounded-lg bg-[#F97316] px-5 py-2.5 text-white text-sm font-medium shadow hover:bg-[#EA580C] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F97316]"
+              >
+                View more
+              </a>
+            </div>
+
+            <!-- Divider -->
+            <hr class="mt-8 border-black/10" />
+
+            <!-- Accordion group -->
+            <div class="mt-4 divide-y divide-black/10" role="list">
+              <!-- Item 1 (expanded by default) -->
+              <article class="py-5">
+                <header class="flex items-start gap-4">
+                  <h3 class="text-xl sm:text-2xl font-semibold flex-1">
+                    Constructions
+                  </h3>
+
+                  <!-- Toggle button -->
+                  <button
+                    type="button"
+                    class="accordion-btn relative isolate inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-md ring-1 ring-black/15 hover:bg-black/5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#F97316]"
+                    aria-expanded="true"
+                    aria-controls="acc-panel-1"
+                    id="acc-button-1"
+                  >
+                    <!-- minus icon (visible when open) -->
+                    <svg
+                      class="icon-open h-4 w-4"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <rect x="5" y="11" width="14" height="2" rx="1"></rect>
+                    </svg>
+                    <!-- plus icon (visible when closed) -->
+                    <svg
+                      class="icon-closed hidden h-4 w-4"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <rect x="11" y="5" width="2" height="14" rx="1"></rect>
+                      <rect x="5" y="11" width="14" height="2" rx="1"></rect>
+                    </svg>
+                  </button>
+                </header>
+
+                <!-- Content panel -->
+                <div
+                  id="acc-panel-1"
+                  role="region"
+                  aria-labelledby="acc-button-1"
+                  class="accordion-panel grid md:grid-cols-12 gap-6 pr-0 md:pr-16 transition-[grid-template-rows,opacity] duration-300"
+                >
+                  <!-- text/cta -->
+                  <div class="md:col-span-7">
+                    <p class="mt-2 text-sm sm:text-base text-black/60 max-w-xl">
+                      New constructors have arrived on the scene, ready to shape
+                      the future of our built environment.
+                    </p>
+
+                    <a
+                      href="#explore"
+                      class="mt-5 inline-flex items-center gap-2 rounded-md border border-[#F97316]/50 px-4 py-2 text-sm font-medium text-[#0b0c10] hover:bg-[#F97316]/5"
+                    >
+                      Explore Now
+                      <svg
+                        class="h-4 w-4"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="1.5"
+                          d="M8 12h8m0 0-4-4m4 4-4 4"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+
+                  <!-- image -->
+                  <div class="md:col-span-5">
+                    <img
+                      src="./assets/services/item1-constraction.jpg"
+                      alt="Safety helmet, tools and blueprint"
+                      class="w-full h-56 md:h-56 lg:h-60 object-cover rounded-md ring-1 ring-black/10"
+                    />
+                  </div>
+                </div>
+              </article>
+
+              <!-- Item 2 -->
+              <article class="py-5">
+                <header class="flex items-start gap-4">
+                  <h3 class="text-xl sm:text-2xl font-semibold flex-1">
+                    Architecture Design
+                  </h3>
+
+                  <button
+                    type="button"
+                    class="accordion-btn relative isolate inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-md ring-1 ring-black/15 hover:bg-black/5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#F97316]"
+                    aria-expanded="false"
+                    aria-controls="acc-panel-2"
+                    id="acc-button-2"
+                  >
+                    <svg
+                      class="icon-open hidden h-4 w-4"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <rect x="5" y="11" width="14" height="2" rx="1"></rect>
+                    </svg>
+                    <svg
+                      class="icon-closed h-4 w-4"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <rect x="11" y="5" width="2" height="14" rx="1"></rect>
+                      <rect x="5" y="11" width="14" height="2" rx="1"></rect>
+                    </svg>
+                  </button>
+                </header>
+
+                <div
+                  id="acc-panel-2"
+                  role="region"
+                  aria-labelledby="acc-button-2"
+                  class="accordion-panel hidden grid md:grid-cols-12 gap-6 pr-0 md:pr-16"
+                >
+                  <div class="md:col-span-7">
+                    <p class="mt-2 text-sm sm:text-base text-black/60 max-w-xl">
+                      Concept-to-completion architectural services focusing on
+                      efficiency, aesthetics, and human experience.
+                    </p>
+                    <a
+                      href="#explore"
+                      class="my-5 inline-flex items-center gap-2 rounded-md border border-[#F97316]/50 px-4 py-2 text-sm font-medium text-[#0b0c10] hover:bg-[#F97316]/5"
+                    >
+                      Explore Now
+                      <svg
+                        class="h-4 w-4"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="1.5"
+                          d="M8 12h8m0 0-4-4m4 4-4 4"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="md:col-span-5">
+                    <img
+                      src="./assets/services/item2-architechture-design.jpg"
+                      alt="Architecture design drafts"
+                      class="w-full h-56 md:h-56 lg:h-60 object-cover rounded-md ring-1 ring-black/10"
+                    />
+                  </div>
+                </div>
+              </article>
+
+              <!-- Item 3 -->
+              <article class="py-5">
+                <header class="flex items-start gap-4">
+                  <h3 class="text-xl sm:text-2xl font-semibold flex-1">
+                    Project Development
+                  </h3>
+
+                  <button
+                    type="button"
+                    class="accordion-btn relative isolate inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-md ring-1 ring-black/15 hover:bg-black/5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#F97316]"
+                    aria-expanded="false"
+                    aria-controls="acc-panel-3"
+                    id="acc-button-3"
+                  >
+                    <svg
+                      class="icon-open hidden h-4 w-4"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <rect x="5" y="11" width="14" height="2" rx="1"></rect>
+                    </svg>
+                    <svg
+                      class="icon-closed h-4 w-4"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <rect x="11" y="5" width="2" height="14" rx="1"></rect>
+                      <rect x="5" y="11" width="14" height="2" rx="1"></rect>
+                    </svg>
+                  </button>
+                </header>
+
+                <div
+                  id="acc-panel-3"
+                  role="region"
+                  aria-labelledby="acc-button-3"
+                  class="accordion-panel hidden grid md:grid-cols-12 gap-6 pr-0 md:pr-16"
+                >
+                  <div class="md:col-span-7">
+                    <p class="mt-2 text-sm sm:text-base text-black/60 max-w-xl">
+                      Feasibility, budgeting, scheduling, and turnkey
+                      delivery—bringing plans to market on time.
+                    </p>
+                    <a
+                      href="#explore"
+                      class="my-5 inline-flex items-center gap-2 rounded-md border border-[#F97316]/50 px-4 py-2 text-sm font-medium text-[#0b0c10] hover:bg-[#F97316]/5"
+                    >
+                      Explore Now
+                      <svg
+                        class="h-4 w-4"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="1.5"
+                          d="M8 12h8m0 0-4-4m4 4-4 4"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="md:col-span-5">
+                    <img
+                      src="./assets/services/item3-project-mangement.jpg"
+                      alt="Project roadmap and planning"
+                      class="w-full h-56 md:h-56 lg:h-60 object-cover rounded-md ring-1 ring-black/10"
+                    />
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <!-- ===== Projects ===== -->
+        <section id="projects" class="bg-white text-[#0b0c10]">
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+            <!-- Header row -->
+            <div class="flex items-start justify-between gap-6">
+              <div class="max-w-2xl">
+                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">
+                  Our Latest Projects
+                </h2>
+                <p class="mt-3 text-sm sm:text-base text-black/60">
+                  Our Latest Projects stand as a testament to our dedication and
+                  expertise. These projects embody the culmination of our hard
+                  work.
+                </p>
+              </div>
+
+              <a
+                href="#all-projects"
+                class="hidden sm:inline-flex items-center rounded-lg bg-[#F97316] px-5 py-2.5 text-white text-sm font-medium shadow hover:bg-[#EA580C] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F97316]"
+              >
+                View more
+              </a>
+            </div>
+
+            <!-- Grid -->
+            <div
+              class="mt-10 grid gap-6 sm:gap-7 lg:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+            >
+              <!-- Card -->
+              <a
+                href="#project-1"
+                class="group block rounded-2xl bg-white ring-1 ring-black/5 shadow-sm hover:shadow-md transition-shadow duration-200 overflow-hidden"
+              >
+                <div class="relative aspect-[4/3] overflow-hidden">
+                  <img
+                    src="./assets/projects/project-1.jpg"
+                    alt="Interior ceiling work"
+                    class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+                  />
+                </div>
+                <div class="p-5 sm:p-6">
+                  <div class="flex items-start justify-between gap-4">
+                    <div>
+                      <h3 class="text-lg sm:text-xl font-semibold">
+                        Interior and Design
+                      </h3>
+                      <p class="mt-1 text-sm text-black/60">
+                        Interior Constructions
+                      </p>
+                    </div>
+                    <span
+                      class="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full ring-1 ring-black/10 text-[#0b0c10] transition-colors group-hover:bg-[#F97316] group-hover:text-white"
+                    >
+                      <!-- arrow -->
+                      <svg
+                        class="h-4 w-4"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="1.5"
+                          d="M8 12h8m0 0-4-4m4 4-4 4"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </a>
+
+              <!-- Card -->
+              <a
+                href="#project-2"
+                class="group block rounded-2xl bg-white ring-1 ring-black/5 shadow-sm hover:shadow-md transition-shadow duration-200 overflow-hidden"
+              >
+                <div class="relative aspect-[4/3] overflow-hidden">
+                  <img
+                    src="./assets/projects/project-2.jpg"
+                    alt="Residential planning meeting"
+                    class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+                  />
+                </div>
+                <div class="p-5 sm:p-6">
+                  <div class="flex items-start justify-between gap-4">
+                    <div>
+                      <h3 class="text-lg sm:text-xl font-semibold">
+                        Residential
+                      </h3>
+                      <p class="mt-1 text-sm text-black/60">
+                        Residential Construction
+                      </p>
+                    </div>
+                    <span
+                      class="inline-flex h-9 w-9 items-center justify-center rounded-full ring-1 ring-black/10 text-[#0b0c10] transition-colors group-hover:bg-[#F97316] group-hover:text-white"
+                    >
+                      <svg
+                        class="h-4 w-4"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="1.5"
+                          d="M8 12h8m0 0-4-4m4 4-4 4"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </a>
+
+              <!-- Card -->
+              <a
+                href="#project-3"
+                class="group block rounded-2xl bg-white ring-1 ring-black/5 shadow-sm hover:shadow-md transition-shadow duration-200 overflow-hidden"
+              >
+                <div class="relative aspect-[4/3] overflow-hidden">
+                  <img
+                    src="./assets/projects/project-3.jpg"
+                    alt="Green design models"
+                    class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+                  />
+                </div>
+                <div class="p-5 sm:p-6">
+                  <div class="flex items-start justify-between gap-4">
+                    <div>
+                      <h3 class="text-lg sm:text-xl font-semibold">
+                        Green and Sustainable
+                      </h3>
+                      <p class="mt-1 text-sm text-black/60">
+                        Green and Sustainable Constructions
+                      </p>
+                    </div>
+                    <span
+                      class="inline-flex h-9 w-9 items-center justify-center rounded-full ring-1 ring-black/10 text-[#0b0c10] transition-colors group-hover:bg-[#F97316] group-hover:text-white"
+                    >
+                      <svg
+                        class="h-4 w-4"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="1.5"
+                          d="M8 12h8m0 0-4-4m4 4-4 4"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </a>
+
+              <!-- Card -->
+              <a
+                href="#project-4"
+                class="group block rounded-2xl bg-white ring-1 ring-black/5 shadow-sm hover:shadow-md transition-shadow duration-200 overflow-hidden"
+              >
+                <div class="relative aspect-[4/3] overflow-hidden">
+                  <img
+                    src="./assets/projects/project-4.jpg"
+                    alt="Commercial site meeting"
+                    class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+                  />
+                </div>
+                <div class="p-5 sm:p-6">
+                  <div class="flex items-start justify-between gap-4">
+                    <div>
+                      <h3 class="text-lg sm:text-xl font-semibold">
+                        Commercial
+                      </h3>
+                      <p class="mt-1 text-sm text-black/60">
+                        Commercial Constructions
+                      </p>
+                    </div>
+                    <span
+                      class="inline-flex h-9 w-9 items-center justify-center rounded-full ring-1 ring-black/10 text-[#0b0c10] transition-colors group-hover:bg-[#F97316] group-hover:text-white"
+                    >
+                      <svg
+                        class="h-4 w-4"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="1.5"
+                          d="M8 12h8m0 0-4-4m4 4-4 4"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </a>
+
+              <!-- Card -->
+              <a
+                href="#project-5"
+                class="group block rounded-2xl bg-white ring-1 ring-black/5 shadow-sm hover:shadow-md transition-shadow duration-200 overflow-hidden"
+              >
+                <div class="relative aspect-[4/3] overflow-hidden">
+                  <img
+                    src="./assets/projects/project-5.jpg"
+                    alt="Industrial plant exterior"
+                    class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+                  />
+                </div>
+                <div class="p-5 sm:p-6">
+                  <div class="flex items-start justify-between gap-4">
+                    <div>
+                      <h3 class="text-lg sm:text-xl font-semibold">
+                        Industrial
+                      </h3>
+                      <p class="mt-1 text-sm text-black/60">
+                        Industrial Constructions
+                      </p>
+                    </div>
+                    <span
+                      class="inline-flex h-9 w-9 items-center justify-center rounded-full ring-1 ring-black/10 text-[#0b0c10] transition-colors group-hover:bg-[#F97316] group-hover:text-white"
+                    >
+                      <svg
+                        class="h-4 w-4"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="1.5"
+                          d="M8 12h8m0 0-4-4m4 4-4 4"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </a>
+
+              <!-- Card -->
+              <a
+                href="#project-6"
+                class="group block rounded-2xl bg-white ring-1 ring-black/5 shadow-sm hover:shadow-md transition-shadow duration-200 overflow-hidden"
+              >
+                <div class="relative aspect-[4/3] overflow-hidden">
+                  <img
+                    src="./assets/projects/project-6.jpg"
+                    alt="Education structures"
+                    class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+                  />
+                </div>
+                <div class="p-5 sm:p-6">
+                  <div class="flex items-start justify-between gap-4">
+                    <div>
+                      <h3 class="text-lg sm:text-xl font-semibold">
+                        EduStructures
+                      </h3>
+                      <p class="mt-1 text-sm text-black/60">
+                        EduStructures Constructions
+                      </p>
+                    </div>
+                    <span
+                      class="inline-flex h-9 w-9 items-center justify-center rounded-full ring-1 ring-black/10 text-[#0b0c10] transition-colors group-hover:bg-[#F97316] group-hover:text-white"
+                    >
+                      <svg
+                        class="h-4 w-4"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="1.5"
+                          d="M8 12h8m0 0-4-4m4 4-4 4"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+        <!-- ========== CONTACT ========== -->
+        <section id="contact" class="bg-white text-[#0b0c10]">
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
+            <!-- Header -->
+            <div class="text-center max-w-3xl mx-auto">
+              <span
+                class="inline-flex items-center rounded-full bg-[#F97316]/10 text-[#F97316] px-3 py-1 text-xs font-semibold ring-1 ring-[#F97316]/20"
+              >
+                Contact Us
+              </span>
+              <h2
+                class="mt-4 text-3xl sm:text-4xl font-extrabold tracking-tight"
+              >
+                Start Your Project With Us
+              </h2>
+              <p class="mt-3 text-black/60">
+                Tell us a bit about your plans. Whether residential, commercial,
+                or industrial, our team will guide you every step of the way.
+              </p>
+            </div>
+
+            <!-- Grid -->
+            <div class="mt-10 grid lg:grid-cols-2 gap-8 lg:gap-14 items-start">
+              <!-- Left image with cut corners -->
+              <div class="relative">
+                <div
+                  class="absolute -z-10 -inset-4 rounded-3xl bg-gradient-to-tr from-[#F97316]/25 via-black/5 to-transparent blur-2xl"
+                ></div>
+
+                <figure
+                  class="overflow-hidden rounded-[2rem] [clip-path:polygon(0%_5%,5%_0%,95%_0%,100%_5%,100%_95%,95%_100%,5%_100%,0%_95%)] ring-1 ring-black/10 shadow-sm"
+                >
+                  <img
+                    src="./assets/contact-hero.jpg"
+                    alt="Crane lifting formwork at a construction site"
+                    class="w-full h-[420px] md:h-[620px] object-cover object-center transition-transform duration-300 hover:scale-[1.03] rounded-[2rem] [clip-path:polygon(0%_5%,5%_0%,95%_0%,100%_5%,100%_95%,95%_100%,5%_100%,0%_95%)]"
+                  />
+                </figure>
+              </div>
+
+              <!-- Right: form card -->
+              <div class="relative">
+                <form
+                  id="contactForm"
+                  class="rounded-2xl bg-white ring-1 ring-black/10 shadow-sm p-5 sm:p-6 lg:p-7"
+                >
+                  <h3 class="text-xl sm:text-2xl font-semibold mb-5">
+                    Send a message
+                  </h3>
+
+                  <!-- Success / error banners -->
+                  <div
+                    id="contactAlert"
+                    class="hidden mb-4 rounded-lg p-3 text-sm"
+                  ></div>
+
+                  <div class="grid sm:grid-cols-2 gap-4">
+                    <div>
+                      <label
+                        for="fullName"
+                        class="block text-sm font-medium mb-1"
+                        >Enter your full name</label
+                      >
+                      <input
+                        id="fullName"
+                        name="fullName"
+                        type="text"
+                        required
+                        class="w-full rounded-md ring-1 ring-black/15 focus:ring-2 focus:ring-[#F97316] bg-white px-3 py-2 outline-none placeholder:text-black/40"
+                        placeholder="John Doe"
+                      />
+                    </div>
+
+                    <div>
+                      <label for="email" class="block text-sm font-medium mb-1"
+                        >Enter your email address</label
+                      >
+                      <input
+                        id="email"
+                        name="email"
+                        type="email"
+                        required
+                        class="w-full rounded-md ring-1 ring-black/15 focus:ring-2 focus:ring-[#F97316] bg-white px-3 py-2 outline-none placeholder:text-black/40"
+                        placeholder="demo@gmail.com"
+                      />
+                    </div>
+
+                    <div>
+                      <label for="phone" class="block text-sm font-medium mb-1"
+                        >Enter your phone number</label
+                      >
+                      <input
+                        id="phone"
+                        name="phone"
+                        type="tel"
+                        inputmode="tel"
+                        class="w-full rounded-md ring-1 ring-black/15 focus:ring-2 focus:ring-[#F97316] bg-white px-3 py-2 outline-none placeholder:text-black/40"
+                        placeholder="+1 (555) 000-0000"
+                      />
+                    </div>
+
+                    <!-- Simple math challenge -->
+                    <div>
+                      <label
+                        for="captcha"
+                        class="block text-sm font-medium mb-1"
+                      >
+                        Prove you’re human:
+                        <span id="captchaQuestion" class="font-semibold"></span>
+                      </label>
+                      <input
+                        id="captcha"
+                        name="captcha"
+                        type="text"
+                        inputmode="numeric"
+                        required
+                        class="w-full rounded-md ring-1 ring-black/15 focus:ring-2 focus:ring-[#F97316] bg-white px-3 py-2 outline-none placeholder:text-black/40"
+                        placeholder="Your answer"
+                      />
+                    </div>
+
+                    <div class="sm:col-span-2">
+                      <label
+                        for="message"
+                        class="block text-sm font-medium mb-1"
+                        >Message</label
+                      >
+                      <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        required
+                        class="w-full rounded-md ring-1 ring-black/15 focus:ring-2 focus:ring-[#F97316] bg-white px-3 py-2 outline-none placeholder:text-black/40"
+                        placeholder="Tell us about your project, site address, timeline, and budget."
+                      ></textarea>
+                    </div>
+
+                    <!-- Consent -->
+                    <div class="sm:col-span-2">
+                      <label class="inline-flex items-start gap-2 text-sm">
+                        <input
+                          id="agree"
+                          type="checkbox"
+                          class="mt-1 h-4 w-4 rounded border-black/20 text-[#F97316] focus:ring-[#F97316]"
+                          required
+                        />
+                        <span>I agree to the terms of service.</span>
+                      </label>
+                    </div>
+
+                    <!-- Honeypot (spam trap) – keep it visually hidden, but present in DOM -->
+                    <div aria-hidden="true" class="hp sm:col-span-2">
+                      <label class="block text-sm font-medium mb-1"
+                        >Company (Leave this blank)</label
+                      >
+                      <input
+                        type="text"
+                        name="company"
+                        tabindex="-1"
+                        autocomplete="off"
+                        class="w-full rounded-md ring-1 ring-black/10 bg-white px-3 py-2 opacity-0 pointer-events-none"
+                      />
+                    </div>
+
+                    <!-- Submit -->
+                    <div class="sm:col-span-2">
+                      <button
+                        id="submitBtn"
+                        type="submit"
+                        class="inline-flex items-center rounded-lg bg-[#F97316] px-5 py-2.5 text-white font-medium shadow hover:bg-[#EA580C] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F97316]"
+                      >
+                        Submit
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Timestamp trap to detect too-fast submissions -->
+                  <input type="hidden" id="startedAt" name="startedAt" />
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ========== FOOTER ========== -->
+        <footer class="bg-brand text-white/80">
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-6">
+            <div
+              class="grid gap-10 lg:gap-16 grid-cols-1 sm:grid-cols-2 lg:grid-cols-6"
+            >
+              <!-- Brand / About -->
+              <div class="sm:col-span-2">
+                <a href="/" class="inline-flex items-center gap-2">
+                  <span class="text-xl font-semibold">Construct</span>
+                </a>
+                <p class="mt-4 max-w-sm text-black/70">
+                  We work with architects, engineers, and clients to plan and
+                  design.
+                </p>
+
+                <!-- Socials -->
+                <div class="mt-5 flex items-center gap-3">
+                  <a
+                    aria-label="LinkedIn"
+                    href="#"
+                    class="inline-flex text-black h-9 w-9 items-center justify-center rounded-full ring-1 ring-white/40 hover:bg-[#F97316] hover:text-white"
+                  >
+                    <!-- LinkedIn -->
+                    <svg
+                      class="h-4 w-4"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1 0-5ZM3.5 9h3v12h-3V9Zm7 0h2.86v1.64h.04c.4-.73 1.38-1.64 2.84-1.64C19.1 9 21 10.57 21 13.8V21h-3v-6.2c0-1.48-.53-2.49-1.86-2.49-1.02 0-1.63.68-1.9 1.35-.1.24-.12.58-.12.92V21h-3V9Z"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    aria-label="Facebook"
+                    href="#"
+                    class="inline-flex text-black h-9 w-9 items-center justify-center rounded-full ring-1 ring-white/40 hover:bg-[#F97316] hover:text-white"
+                  >
+                    <!-- Facebook -->
+                    <svg
+                      class="h-4 w-4"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M13 10h3l-1 4h-2v8h-4v-8H7v-4h2V8c0-2.2 1.2-5 5-5h3v4h-2c-.9 0-2 .5-2 2v1Z"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    aria-label="Instagram"
+                    href="#"
+                    class="inline-flex text-black h-9 w-9 items-center justify-center rounded-full ring-1 ring-white/40 hover:bg-[#F97316] hover:text-white"
+                  >
+                    <!-- Instagram -->
+                    <svg
+                      class="h-4 w-4"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2.2A2.8 2.8 0 1 0 12 16.8 2.8 2.8 0 0 0 12 9.2Zm5.3-.9a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2Z"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    aria-label="X / Twitter"
+                    href="#"
+                    class="inline-flex text-black h-9 w-9 items-center justify-center rounded-full ring-1 ring-white/40 hover:bg-[#F97316] hover:text-white"
+                  >
+                    <!-- X -->
+                    <svg
+                      class="h-4 w-4"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M18.9 3H21l-6.5 7.4L22 21h-5.5l-4.3-5.5L7 21H3.9l7.1-8.1L2.5 3H8l3.9 5.1L18.9 3Zm-2.1 16h1.5L7.3 5H5.7L16.8 19Z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Menu -->
+              <div>
+                <h4 class="text-base font-semibold">Menu</h4>
+                <ul class="mt-3 space-y-2 text-black/70">
+                  <li>
+                    <a
+                      class="hover:text-black/90 hover:border-b hover:border-white py-1"
+                      href="#"
+                      >Home</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="hover:text-black/90 hover:border-b hover:border-white py-1"
+                      href="#"
+                      >Consultant</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="hover:text-black/90 hover:border-b hover:border-white py-1"
+                      href="#"
+                      >Pricing</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Service -->
+              <div>
+                <h4 class="text-base font-semibold">Service</h4>
+                <ul class="mt-3 space-y-2 text-black/70">
+                  <li>
+                    <a
+                      class="hover:text-black/90 hover:border-b hover:border-white py-1"
+                      href="#"
+                      >Residential</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="hover:text-black/90 hover:border-b hover:border-white py-1"
+                      href="#"
+                      >Industrial</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="hover:text-black/90 hover:border-b hover:border-white py-1"
+                      href="#"
+                      >Commercial</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Best Choice -->
+              <div>
+                <h4 class="text-base font-semibold">Best Choice</h4>
+                <ul class="mt-3 space-y-2 text-black/70">
+                  <li>
+                    <a
+                      class="hover:text-black/90 hover:border-b hover:border-white py-1"
+                      href="#"
+                      >Project</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="hover:text-black/90 hover:border-b hover:border-white py-1"
+                      href="#"
+                      >Interior</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="hover:text-black/90 hover:border-b hover:border-white py-1"
+                      href="#"
+                      >Planning</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- About Us -->
+              <div>
+                <h4 class="text-base font-semibold">About Us</h4>
+                <ul class="mt-3 space-y-2 text-black/70">
+                  <li>
+                    <a
+                      class="hover:text-black/90 hover:border-b hover:border-white py-1"
+                      href="#"
+                      >Our Process</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="hover:text-black/90 hover:border-b hover:border-white py-1"
+                      href="#"
+                      >Career</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="hover:text-black/90 hover:border-b hover:border-white py-1"
+                      href="#"
+                      >News &amp; Blog</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Divider -->
+            <hr class="mt-12 border-black/10" />
+
+            <!-- Bottom bar -->
+            <div class="py-4 text-center text-sm text-black/50">
+              © <span id="year"></span> Construct. All rights reserved.
+            </div>
+          </div>
+        </footer>
+
+        <script>
+          // current year for copyright
+          document.getElementById('year').textContent =
+            new Date().getFullYear();
+        </script>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,9 +1,11 @@
 # Construction Company Website
 
 A modern, responsive landing page for a construction business.  
-Built with **HTML, Tailwind CSS v4.1, and JavaScript**.  
+Built with **HTML, Tailwind CSS and JavaScript**.  
+
 
 ## Features
+
 - 🏗️ **Industry-Focused Design** – Clean sections tailored for construction websites  
 - 📌 **Sections Included**:  
   - Hero with brand highlight  
@@ -14,6 +16,7 @@ Built with **HTML, Tailwind CSS v4.1, and JavaScript**.
 - 📱 **Responsive & Mobile-Friendly**  
 - 🔗 Smooth scrolling navigation  
 - 🎨 Custom theme (brand colors, shadows, fonts)
+
 
 ## Folder Structure
 
